@@ -4,7 +4,7 @@ import os
 cam = "https://api.ucsb.edu/dining/cams/v2/stream/carrillo?ucsb-api-key=0AVpBy0HfloWaEQHPanHTGSYmXusaNIJ"
 
 
-cap = cv.VideoCapture(cam)
+cap = cv.VideoCapture(0)
 if not cap.isOpened():
     print("Cannot open camera")
     exit()
